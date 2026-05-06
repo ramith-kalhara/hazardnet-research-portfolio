@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HazardNet - AI Disaster Prediction System | Research Portfolio</title>
+  <meta name="description"
+    content="HazardNet: AI-Based Natural Disaster Prediction and SOS Emergency Response System for Sri Lanka. Final Year Research Project by BSc (Hons) IT Student.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Hidden Checkbox for CSS-Only Theme Toggle -->
+  <input type="checkbox" id="theme-toggle">
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">HazardNet</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#domain">Domain</a></li>
+        <li><a href="#milestones">Milestones</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#presentations">Presentations</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+      </ul>
+      <label for="theme-toggle" class="theme-toggle-label" title="Toggle Dark/Light Mode">
+        <span class="toggle-ball"></span>
+      </label>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Home Section -->
+    <section class="hero" id="home">
+      <h1>HazardNet</h1>
+      <p>AI-powered disaster prediction and emergency response platform for safer communities in Sri Lanka.</p>
+
+      <!-- Abstract -->
+      <div class="abstract-box"
+        style="background: var(--surface-color); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); max-width: 800px; margin: 0 auto 2rem auto; text-align: left;">
+        <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Abstract</h3>
+        <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 0;">HazardNet is an AI-based natural
+          disaster prediction and SOS emergency response system tailored for Sri Lanka. The system leverages Machine
+          Learning, Computer Vision, and Natural Language Processing to provide real-time, personalized risk assessments
+          for floods and landslides, manage rescue operations, verify disaster reports, and coordinate donations
+          effectively during critical situations.</p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#domain" class="btn btn-primary">Explore Domain</a>
+      </div>
+
+      <div class="video-container">
+        <video controls preload="metadata">
+          <source src="Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- 2. Domain Section -->
+    <section id="domain">
+      <h2 class="section-title">Domain</h2>
+      <p class="section-subtitle">Information gathered through literature survey, problem definition, and methodologies.
+      </p>
+
+      <div class="grid grid-2" style="margin-bottom: 3rem;">
+        <div class="card">
+          <h3>Literature Survey</h3>
+          <p>Extensive research was conducted on existing disaster management platforms worldwide and local systems used
+            in Sri Lanka. The survey revealed that while broad, regional alerts exist, there is a distinct lack of
+            predictive, personalized systems that evaluate dynamic environmental factors to issue localized safety risk
+            percentages in real-time.</p>
+        </div>
+        <div class="card">
+          <h3>Research Gap</h3>
+          <p>There is a critical lack of probability-based, location-specific risk scoring for individuals. Current
+            platforms fail to integrate real-time user location, elevation data, dynamic river distance, and machine
+            learning to offer individualized safe routing and home safety verification prior to disaster impact.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 3rem; border-left: 4px solid var(--primary-color);">
+        <h3>Research Problem</h3>
+        <p>Sri Lanka is frequently affected by floods and landslides, especially during heavy rainfall. Existing systems
+          provide general, regional alerts. Users need personalized and location-specific safety information. A user
+          needs to know whether their current location, home, or route is safe. Disaster risk is not a simple yes/no; it
+          requires probability-based scoring.</p>
+      </div>
+
+      <div class="card" style="margin-bottom: 3rem;">
+        <h3>Research Objectives</h3>
+        <ul style="list-style-position: inside; color: var(--text-secondary); padding-left: 1rem; margin-top: 1rem;">
+          <li style="margin-bottom: 0.5rem;">Develop a machine learning-based flood and landslide risk prediction
+            component.</li>
+          <li style="margin-bottom: 0.5rem;">Integrate real-time weather and location APIs to evaluate immediate area
+            safety.</li>
+          <li style="margin-bottom: 0.5rem;">Support safe route planning to help users avoid dangerous areas.</li>
+          <li style="margin-bottom: 0.5rem;">Provide an SOS emergency reporting mechanism with nearby service locations.
+          </li>
+          <li style="margin-bottom: 0.5rem;">Manage rescue camp capacity using computer vision and facilitate targeted
+            donations.</li>
+        </ul>
+      </div>
+
+      <h3 class="section-title" style="font-size: 2rem; margin-top: 4rem;">Methodology</h3>
+      <div class="grid grid-2" style="margin-bottom: 3rem;">
+        <div class="flow-diagram">
+          <h3>System Architecture</h3>
+          <div class="flow-step">📱 Flutter Mobile App</div>
+          <div class="flow-arrow">⇅</div>
+          <div class="flow-step"
+            style="border-color: var(--primary-color); border-width: 2px; box-shadow: var(--shadow-md);">⚙️ Spring Boot
+            REST API</div>
+
+          <div style="display: flex; justify-content: center; gap: 1.5rem; width: 100%; margin-top: 0.5rem;">
+            <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+              <div class="flow-arrow" style="margin-bottom: 0.5rem;">⇅</div>
+              <div class="flow-step" style="padding: 0.8rem 0.5rem; font-size: 0.9rem;">🐍 Python ML</div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+              <div class="flow-arrow" style="margin-bottom: 0.5rem;">⇅</div>
+              <div class="flow-step" style="padding: 0.8rem 0.5rem; font-size: 0.9rem;">🗄️ MySQL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-diagram">
+          <h3>Real-Time Prediction Flow</h3>
+          <div class="flow-step" style="font-size: 0.9rem; text-align: left;">
+            <strong>1. Input:</strong> App gets GPS Location<br>
+            <strong>2. Data Prep:</strong> Spring Boot calls APIs<br>
+            <strong>3. Prediction:</strong> Python Service loads Models<br>
+            <strong>4. Scoring:</strong> Convert to Percentage<br>
+            <strong>5. Output:</strong> App displays Risk Level
+          </div>
+          <div class="flow-arrow">⬇️</div>
+          <div class="flow-step" style="background: var(--surface-color); border-color: var(--primary-color);">
+            Example: Flood Risk 78% (High)
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title" style="font-size: 2rem; margin-top: 4rem;">Technologies Used</h3>
+      <div class="tech-badges">
+        <span class="badge">Flutter</span>
+        <span class="badge">Spring Boot</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">Python</span>
+        <span class="badge">Scikit-learn</span>
+        <span class="badge">Pandas</span>
+        <span class="badge">NumPy</span>
+        <span class="badge">Google Maps API</span>
+        <span class="badge">OpenWeather API</span>
+        <span class="badge">OpenCV</span>
+        <span class="badge">DistilBERT</span>
+      </div>
+    </section>
+
+    <!-- 3. Milestones Section -->
+    <section id="milestones">
+      <h2 class="section-title">Milestones</h2>
+      <p class="section-subtitle">Project assessments and progress tracking.</p>
+
+      <div class="accordion-container" style="max-width: 800px; margin: 0 auto;">
+        <details class="accordion">
+          <summary>Project Proposal</summary>
+          <div class="accordion-content">
+            <p><strong>Date:</strong> 2025 Sep 10 </p>
+            <p><strong>Marks Allocated:</strong> Good</p>
+            <p><strong>Details:</strong> Initial presentation of the research problem, objectives, and proposed
+              methodology to the evaluation panel. Includes approval of the project charter.</p>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary>Progress Presentation-1</summary>
+          <div class="accordion-content">
+            <p><strong>Date:</strong> 2026 Jan 05</p>
+            <p><strong>Marks Allocated:</strong> Good</p>
+            <p><strong>Details:</strong> Review of initial system completion including basic UI, literature survey
+              completion, and initial machine learning model training and dataset preprocessing.</p>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary>Progress Presentation-2</summary>
+          <div class="accordion-content">
+            <p><strong>Date:</strong> 2026 March 08</p>
+            <p><strong>Marks Allocated:</strong> Good</p>
+            <p><strong>Details:</strong> Review of integrated modules, preliminary testing results, integration of
+              Python APIs with Spring Boot, and functional Flutter application.</p>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary>Final Assessment</summary>
+          <div class="accordion-content">
+            <p><strong>Date:</strong> 2026 May 04</p>
+            <p><strong>Marks Allocated:</strong> Pending</p>
+            <p><strong>Details:</strong> Final demonstration of the complete, working prototype and submission of the
+              final thesis document evaluating the entire system.</p>
+          </div>
+        </details>
+        <details class="accordion">
+          <summary>Viva</summary>
+          <div class="accordion-content">
+            <p><strong>Date:</strong> 2026 May 04</p>
+            <p><strong>Marks Allocated:</strong> Pending </p>
+            <p><strong>Details:</strong> Individual assessment and Q&A regarding specific contributions, research
+              constraints, and technical decisions made during the project.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 4. Documents Section -->
+    <section id="documents">
+      <h2 class="section-title">Documents</h2>
+      <p class="section-subtitle">Project documentation and deliverables.</p>
+
+      <ul class="doc-list" style="max-width: 600px; margin: 0 auto;">
+        <li><a href="#" target="_blank" rel="noopener noreferrer">📄 Project Charter (one doc)</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1tcRjsmj5kTAOxl1NldYtzhuIY2bHJVlw?usp=sharing"
+            target="_blank" rel="noopener noreferrer">📄 Proposal Document (one doc)</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">📄 Check List documents</a></li>
+        <li><a href="https://drive.google.com/file/d/1vA59cOqnWEEoanz_Egap1n9zt7oysEQ-/view?usp=drivesdk"
+            target="_blank" rel="noopener noreferrer">📄 Final Document - Main</a></li>
+        <li><a href="https://drive.google.com/file/d/1pDRA_0lBCdnW8YhbAyKrU11B8NI8CQWM/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">📄 Final Document - Component 1</a></li>
+        <li><a href="https://drive.google.com/file/d/1kzcOgG-Sqv5ISgKGtyML4nyGn-i-8LqA/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">📄 Final Document - Component 2</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">📄 Final Document - Component 3</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">📄 Final Document - Component 4</a></li>
+      </ul>
+    </section>
+
+    <!-- 5. Presentations Section -->
+    <section id="presentations">
+      <h2 class="section-title">Presentations (Slides)</h2>
+      <p class="section-subtitle">Slides used in past and upcoming presentations.</p>
+
+      <ul class="doc-list" style="max-width: 600px; margin: 0 auto;">
+        <li><a href="https://drive.google.com/file/d/1_mltbBEqIT26u-pqWDhZ8pJ26N7GjECG/view?usp=drivesdk"
+            target="_blank" rel="noopener noreferrer">📊 Proposal Presentation</a></li>
+        <li><a href="https://drive.google.com/file/d/1b-vP_HqYsoOcQiT0j5XZYLWaXLAhjWXi/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">📊 Progress Presentation-1</a></li>
+        <li><a
+            href="https://docs.google.com/presentation/d/1ihXCFJqgRJSoR8yJ1FkeVLy4JLvbWU-R/edit?usp=sharing&ouid=108860474356464505313&rtpof=true&sd=true"
+            target="_blank" rel="noopener noreferrer">📊 Progress Presentation-2</a></li>
+        <li><a
+            href="https://docs.google.com/presentation/d/105gZipwnQaOyYcY_XSBIzPugD8ucQnlp/edit?usp=sharing&ouid=108860474356464505313&rtpof=true&sd=true"
+            target="_blank" rel="noopener noreferrer">📊 Final Presentation</a></li>
+      </ul>
+    </section>
+
+    <!-- 6. About Us Section -->
+    <section id="about-us">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-subtitle">Meet the supervisors and the team behind HazardNet.</p>
+
+      <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem; color: var(--primary-color);">Supervisors</h3>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; margin-bottom: 4rem;">
+        <div class="team-card">
+          <img src="images/nelum.jpg" alt="Nelum Chathuranga Amarasena" class="team-img">
+          <h3>Nelum Chathuranga Amarasena</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Supervisor</p>
+        </div>
+
+        <div class="team-card">
+          <img src="images/uthpala.jpg" alt="Ms. Uthpala Samarakoon" class="team-img">
+          <h3>Ms. Uthpala Samarakoon</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Co-Supervisor</p>
+        </div>
+      </div>
+
+      <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.8rem; color: var(--primary-color);">Team Members</h3>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="images/team_member_1777227883916.jpeg" alt="Biyanwila B.D.B" class="team-img">
+          <h3>Biyanwila B.D.B</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Resource Distribution</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Focused on donation
+            management, and camp safety.</p>
+          <a href="mailto:danukbiyan@gmail.com" style="font-size: 0.85rem; display: block; margin-bottom: 0.5rem;">📧
+            danukbiyan@gmail.com</a>
+          <p style="font-size: 0.85rem;">🏆 [Add Achievements]</p>
+        </div>
+
+        <div class="team-card">
+          <img src="images/team_member_2_1777230947773.jpeg" alt="Anjana J.L.I." class="team-img">
+          <h3>Anjana J.L.I.</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Hazard-Aware Safe Routing</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Focused on safe route
+            recommendation using map analysis.</p>
+          <a href="mailto:inupaanjana@gmail.com" style="font-size: 0.85rem; display: block; margin-bottom: 0.5rem;">📧
+            inupaanjana@gmail.com</a>
+          <p style="font-size: 0.85rem;">🏆 [Add Achievements]</p>
+        </div>
+
+        <div class="team-card">
+          <img src="images/team_member_3_1777230962489.jpg" alt="Kalhara P.D.R." class="team-img">
+          <h3>Kalhara P.D.R.</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Risk Prediction</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Focused on machine
+            learning-based prediction.</p>
+          <a href="mailto:ramithkalhara17@gmail.com"
+            style="font-size: 0.85rem; display: block; margin-bottom: 0.5rem;">📧 ramithkalhara17@gmail.com</a>
+          <p style="font-size: 0.85rem;">🏆 [Add Achievements]</p>
+        </div>
+
+        <div class="team-card">
+          <img src="images/team_member_4_1777230979327.jpeg" alt="Wickramasinghe W.M.I.V.B." class="team-img">
+          <h3>Wickramasinghe W.M.I.V.B.</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">SOS Emergency Management</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Focused on SOS emergency
+            reporting.</p>
+          <a href="mailto:isira270@gmail.com" style="font-size: 0.85rem; display: block; margin-bottom: 0.5rem;">📧
+            isira270@gmail.com</a>
+          <p style="font-size: 0.85rem;">🏆 [Add Achievements]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact Us Section -->
+    <section id="contact-us">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">Get in touch with the research team.</p>
+
+      <div class="grid grid-2">
+        <div class="card" style="display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-bottom: 1.5rem;">General Contacts</h3>
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div class="card-icon" style="margin-bottom: 0; padding: 0.8rem; font-size: 1.2rem;">📞</div>
+            <div>
+              <p style="font-weight: 600; color: var(--text-primary); margin: 0; margin-bottom: 0.2rem;">Phone Numbers
+              </p>
+              <p style="margin: 0; font-size: 0.95rem; color: var(--text-secondary);">+94 76 890 1445<br>+94 76 425 0917
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="card-icon" style="margin-bottom: 0; padding: 0.8rem; font-size: 1.2rem;">📧</div>
+            <div>
+              <p style="font-weight: 600; color: var(--text-primary); margin: 0; margin-bottom: 0.2rem;">E-mails</p>
+              <p style="margin: 0; font-size: 0.95rem; color: var(--text-secondary);">
+                theteamshadowstts@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail Address</label>
+              <input type="email" id="email" placeholder="Your E-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>HazardNet</h2>
+    <p>ML-Based Natural Disaster Prediction and SOS Emergency Response System for Sri Lanka</p>
+    <p style="font-size: 0.8rem; margin-top: 1rem; color: var(--text-secondary);">Final Year Research Project Portfolio
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent default page reload
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Construct the email content
+      const targetEmail = 'theteamshadowstts@gmail.com';
+      const subject = encodeURIComponent(`HazardNet Portfolio Contact from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+      // Open Gmail directly in a new tab instead of using the local mail app
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${targetEmail}&su=${subject}&body=${body}`;
+
+      window.open(gmailUrl, '_blank');
+    });
+  </script>
+
+</body>
+
+</html>
